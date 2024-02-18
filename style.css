@@ -5,6 +5,19 @@ body {
 }
 
 button {
-  padding: 1rem;
+  font-size: 1.5rem;
+  padding: 1.5rem;
   cursor: pointer;
+  border-radius: 0.55rem;
+  border: none;
+}
+
+.btn-border-pop {
+  background: grey;
+  outline: 3px solid grey;
+  transition: outline-offset 0.3s ease-in-out;
+}
+
+.btn-border-pop:hover {
+  outline-offset: 10px;
 }
