@@ -1,0 +1,10 @@
+body {
+  display: grid;
+  place-items: center;
+  height: 75vh;
+}
+
+button {
+  padding: 1rem;
+  cursor: pointer;
+}
