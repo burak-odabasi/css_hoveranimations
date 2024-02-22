@@ -7,9 +7,9 @@ body {
 
 button {
   font-size: 1.5rem;
-  padding: 1.5rem;
+  padding: 1.2rem;
   cursor: pointer;
-  border-radius: 0.55rem;
+  /* border-radius: 0.55rem; */
   border: none;
   background: gainsboro;
   color: rgb(0, 0, 0);
@@ -55,3 +55,33 @@ button {
 
 /*        button animaton 3
 --------------------------------------- */
+
+.btn-background-circle {
+  position: relative;
+  z-index: 1;
+  transition: 0.7s ease-in-out;
+  background-color: aqua;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.btn-background-circle:hover {
+  color: white;
+}
+
+.btn-background-circle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  transform: scaleX(2.5);
+  border-radius: 0.55rem;
+  transition: 0.7s ease-in-out;
+  border-radius: 25px;
+  background-color: gainsboro;
+}
+.btn-background-circle:hover::before {
+  transform: scaleX(0);
+}
