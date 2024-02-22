@@ -23,6 +23,9 @@ button {
   outline-offset: 10px;
 }
 
+/*        button animaton 2
+--------------------------------------- */
+
 .btn-background-slide {
   position: relative;
   z-index: 1;
@@ -49,3 +52,6 @@ button {
 .btn-background-slide:hover::before {
   transform: scaleX(1);
 }
+
+/*        button animaton 3
+--------------------------------------- */
