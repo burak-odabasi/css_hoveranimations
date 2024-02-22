@@ -88,3 +88,25 @@ button {
 
 /*        button animaton 4
 --------------------------------------- */
+
+.btn-border-underline {
+  transition: 0.5s ease-in-out;
+  transform-origin: center;
+  position: relative;
+  border-bottom: 8px solid gainsboro;
+}
+.btn-border-underline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -8px;
+  height: 8px;
+  background-color: rgb(0, 163, 163);
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn-border-underline:hover::before {
+  transform: scaleX(1);
+}
